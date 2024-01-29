@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "e90c6829-3e6f-4cd5-8145-a5b2fc7ae7c1",
+		"name": "EjercicioPracticoWSCliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32623181"
+	},
+	"item": [
+		{
+			"name": "WSClientes/Usuario/Crea",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"nombre\": \"Carla Lopez\",\r\n    \"genero\": \"F\",\r\n    \"edad\": 21,\r\n    \"identificacion\": \"1803921845\",\r\n    \"direccion\": \"Bellavista\",\r\n    \"telefono\": 20334043\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6765/api/v1/WSClientes/Usuario/Crea",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6765",
+					"path": [
+						"api",
+						"v1",
+						"WSClientes",
+						"Usuario",
+						"Crea"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WSClientes/Usuario/consulta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"identificacion\": \"1803921845\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6765/api/v1/WSClientes/Usuario/consulta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6765",
+					"path": [
+						"api",
+						"v1",
+						"WSClientes",
+						"Usuario",
+						"consulta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WSClientes/Usuario/Actualiza",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"id\": 3,\r\n    \"nombre\": \"Marcos Perez\",\r\n    \"genero\": \"M\",\r\n    \"edad\": 40,\r\n    \"identificacion\": \"1803921845\",\r\n    \"direccion\": \"Cotocollao\",\r\n    \"telefono\": 200334043\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6765/api/v1/WSClientes/Usuario/Actualiza",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6765",
+					"path": [
+						"api",
+						"v1",
+						"WSClientes",
+						"Usuario",
+						"Actualiza"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WSClientes/Usuario/Elimina",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"id\": 5,\r\n    \"identificacion\": \"1921036584\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6765/api/v1/WSClientes/Usuario/Elimina",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6765",
+					"path": [
+						"api",
+						"v1",
+						"WSClientes",
+						"Usuario",
+						"Elimina"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "WSClientes/Cliente/Consulta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idCliente\": 1,\r\n  \"idUsuario\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6765/api/v1/WSClientes/Cliente/Consulta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6765",
+					"path": [
+						"api",
+						"v1",
+						"WSClientes",
+						"Cliente",
+						"Consulta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
